@@ -15,9 +15,9 @@ function App() {
     setSelected(e.key);
   };
   return (
-    <Layout className="layout">
-      <Layout.Header>
-        <h3 style={{ color: "#fff" }}>Todos Users</h3>
+    <Layout className="layout" style={{ backgroundColor: "#fff" }}>
+      <Layout.Header style={{ backgroundColor: "#fff" }}>
+        <h3>Todos Users</h3>
       </Layout.Header>
       <Menu
         selectedKeys={selected}

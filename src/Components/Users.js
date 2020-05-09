@@ -103,7 +103,7 @@ class Users extends React.Component{
 
         const columns = [
             {
-                title: 'User',
+                title: 'Name',
                 dataIndex: 'user',
                 width: '40%',
                 editable: true
@@ -115,7 +115,7 @@ class Users extends React.Component{
                 editable: true
             },
             {
-                title: 'operation',
+                title: 'Action',
                 dataIndex: 'operation',
                 render: (_, record) => {
                     const editable = isEditing(record);
@@ -181,8 +181,8 @@ class Users extends React.Component{
     render(){
         return(
             <div >
-                <div style={{marginTop: '10px',marginBottom: '10px'}}>
-                    <Button type='primary' onClick={this.props.showUserModal}>Create User</Button>
+                <div style={{marginTop: '10px',marginBottom: '10px',}}>
+                    <Button style={{backgroundColor: '#fff',color:'rgba(0, 0, 0, 0.65)',border:'1px solid #d9d9d9',borderRadius:'2px'}} type='primary' onClick={this.props.showUserModal}>Create User</Button>
                 </div>
                 <this.EditableTable />
             </div>

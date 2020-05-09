@@ -3,12 +3,8 @@ import React from "react";
 
 export const todoForm = (
   <>
-    <Form.Item
-      label="Action: "
-      name="todo"
-      rules={[{ message: "Please Enter ToDo" }]}
-    >
-      <Input />
+    <Form.Item label="Action: " name="todo">
+      <Input placeholder="Action" />
     </Form.Item>
     <Form.Item
       label="DateAdded"

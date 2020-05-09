@@ -1,14 +1,14 @@
-import {createStore, applyMiddleware, combineReducers} from 'redux';
-import thunk from 'redux-thunk';
+import { createStore, applyMiddleware, combineReducers } from "redux";
+import thunk from "redux-thunk";
 
-import userReducer from './userReducer';
-import todoReducer from './todoReducer';
+import userReducer from "./userReducer";
+import todoReducer from "./todoReducer";
 
 const rootReducer = combineReducers({
-    user:userReducer,
-    todo:todoReducer
+  user: userReducer,
+  todo: todoReducer
 });
 
-const store = createStore(rootReducer,applyMiddleware(thunk));
+const store = createStore(rootReducer, applyMiddleware(thunk));
 
 export default store;
