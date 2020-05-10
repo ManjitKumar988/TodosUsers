@@ -4,7 +4,7 @@ for (let i = 0; i < 3; i++) {
   originalData.push({
     key: i.toString(),
     user: `John ${i}`,
-    eMail: `john${i}.eMail.com`
+    eMail: `john${i}.gmail.com`
   });
 }
 
